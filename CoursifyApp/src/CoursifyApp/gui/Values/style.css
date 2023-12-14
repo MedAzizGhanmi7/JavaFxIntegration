@@ -1,0 +1,33 @@
+/* CSS file for JavaFX styling */
+.dark-gray-background {
+    -fx-background-color: #636566;
+}
+
+.purp-backgroud{
+    -fx-background-color: #9A9A9A;
+}
+
+.transparent-background{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.radius{
+    -fx-background-radius:100px;
+}
+.monBouton {
+    -fx-background-image: url('file:///C:/Users/PC/Downloads/image.png');
+    -fx-background-size: contain; /* ou cover selon le comportement souhaité */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.circular{
+    -fx-background-radius:50px;
+}
+
+.comment-Vbox{
+    -fx-background-color:#2F0C6E;
+}
+
+.comment-Hbox{
+    -fx-background-color:#C5A5FD;
+}

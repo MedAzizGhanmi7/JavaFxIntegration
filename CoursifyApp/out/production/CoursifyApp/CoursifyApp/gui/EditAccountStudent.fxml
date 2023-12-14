@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchorpane" prefHeight="653.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.EditAccountStudentController">
+   <children>
+                  <ImageView fitHeight="738.0" fitWidth="1041.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/editProfile.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="firstName" layoutX="122.0" layoutY="185.0" />
+      <Label layoutX="21.0" layoutY="190.0" text="First Name" textFill="WHITE" />
+      <Label layoutX="22.0" layoutY="251.0" text="Last Name" textFill="WHITE" />
+      <TextField fx:id="lasttName" layoutX="122.0" layoutY="246.0" />
+      <TextField fx:id="username" editable="false" layoutX="122.0" layoutY="314.0" />
+      <Label layoutX="21.0" layoutY="319.0" prefHeight="21.0" prefWidth="72.0" text="Username" textFill="WHITE" />
+      <TextField fx:id="email" editable="false" layoutX="122.0" layoutY="384.0" />
+      <Label layoutX="21.0" layoutY="389.0" prefHeight="21.0" prefWidth="72.0" text="email" textFill="WHITE" />
+      <TextField fx:id="password" layoutX="492.0" layoutY="185.0" />
+      <Label layoutX="399.0" layoutY="190.0" text="Password" textFill="WHITE" />
+      <TextField fx:id="address" layoutX="492.0" layoutY="246.0" />
+      <Label layoutX="403.0" layoutY="251.0" text="Address" textFill="WHITE" />
+      <Label layoutX="406.0" layoutY="319.0" text="Phone " textFill="WHITE" />
+      <TextField fx:id="phoneNumber" editable="false" layoutX="489.0" layoutY="314.0" prefHeight="31.0" prefWidth="187.0" />
+      <DatePicker fx:id="dateOfBirth" layoutX="122.0" layoutY="454.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="21.0" layoutY="459.0" text="Birthday" textFill="WHITE" />
+      <RadioButton fx:id="genderFemale" layoutX="574.0" layoutY="475.0" mnemonicParsing="false" text="Female" textFill="WHITE" />
+      <RadioButton fx:id="genderMale" layoutX="492.0" layoutY="475.0" mnemonicParsing="false" text="Male" textFill="WHITE" />
+      <Label layoutX="405.0" layoutY="475.0" text="Gender" textFill="WHITE" />
+      <Label layoutX="368.0" layoutY="389.0" prefHeight="21.0" prefWidth="104.0" text="Profile picture" textFill="WHITE" />
+      <Button fx:id="saveBtn" layoutX="122.0" layoutY="666.0" mnemonicParsing="false" onAction="#SaveChanges" prefHeight="31.0" prefWidth="201.0" styleClass="okButton" text="Save changes" />
+      <Label fx:id="typeErrorLabel" layoutX="705.0" layoutY="304.0" prefHeight="21.0" prefWidth="310.0" textFill="RED" visible="false" />
+      <Label fx:id="generalErrorLabel" layoutX="337.0" layoutY="671.0" prefHeight="21.0" prefWidth="471.0" text="Label" textFill="RED" visible="false" />
+      <Button fx:id="selectimgButton" layoutX="492.0" layoutY="384.0" mnemonicParsing="false" onAction="#selectImage" styleClass="backButton" text="Select an image" />
+      <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="200.0" layoutX="760.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="goBackbtn" layoutX="818.0" layoutY="666.0" mnemonicParsing="false" onAction="#GoBacktoStudentProfile" prefHeight="31.0" prefWidth="117.0" styleClass="backButton" text="Go back" />
+      <TextField fx:id="major" editable="false" layoutX="122.0" layoutY="521.0" />
+      <TextField fx:id="currentGradeLevel" editable="false" layoutX="489.0" layoutY="521.0" />
+      <Label layoutX="382.0" layoutY="526.0" text="Grade level" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="526.0" text="Major" textFill="WHITE" />
+   </children>
+</AnchorPane>

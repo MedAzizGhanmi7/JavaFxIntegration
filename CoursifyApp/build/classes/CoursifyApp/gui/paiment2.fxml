@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="908.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.Paiment2Controller">
+   <children>
+      <Label layoutX="376.0" layoutY="32.0" text="CursiPay" textFill="#199bff">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="104.0" text="Remplir tous les champs" textFill="#0947ff">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rib" layoutX="171.0" layoutY="211.0" prefHeight="45.0" prefWidth="567.0" promptText="xxxx-xxxx-xxxx-xxxx" />
+      <TextField fx:id="date" layoutX="182.0" layoutY="293.0" prefHeight="45.0" prefWidth="258.0" promptText="mm-yy" />
+      <TextField fx:id="cvv" layoutX="500.0" layoutY="293.0" prefHeight="45.0" prefWidth="237.0" promptText="cvv" />
+      <TextField fx:id="tele" layoutX="180.0" layoutY="406.0" prefHeight="45.0" prefWidth="467.0" promptText="numero de telephone" />
+      <JFXButton buttonType="RAISED" layoutX="394.0" layoutY="492.0" onAction="#payer" prefHeight="62.0" prefWidth="139.0" style="-fx-background-color: #87CEEB;" text="Payer" />
+      <Label fx:id="erib" layoutX="193.0" layoutY="264.0" prefHeight="21.0" prefWidth="404.0" />
+      <Label fx:id="edate" layoutX="154.0" layoutY="339.0" prefHeight="21.0" prefWidth="271.0" />
+      <Label fx:id="ecvv" layoutX="516.0" layoutY="349.0" prefHeight="21.0" prefWidth="295.0" />
+      <Label fx:id="etel" layoutX="209.0" layoutY="451.0" prefHeight="21.0" prefWidth="364.0" />
+   </children>
+</AnchorPane>

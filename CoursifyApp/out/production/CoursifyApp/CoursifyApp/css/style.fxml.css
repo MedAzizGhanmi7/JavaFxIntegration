@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 24, 2022, 7:59:43 PM
+    Author     : Yassine
+*/
+ 
+.transparente {
+  -fx-background-color: rgba(0, 0, 0, 0); /* White background with 50% transparency */
+}
+
+.white-background-color {
+  -fx-background-color: #fff; /* White background */
+}
+.round-Layout {
+  -fx-background-radius: 50;
+  -fx-border-radius: 50;
+  -fx-border-color: #d7d7d7;
+}
+.selected {
+  -fx-background-color: #f3f3f3; /* Background color for elements with the .selected class */
+}
+.mouse:hover {
+  background-color: #e4e4e4; /* Background color on hover */
+}
+.shadow {
+  -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0), 10,0,0,10);
+}
+
+.button-class {
+  background-color: #F3F3F3;
+}
+/* Styling for a button */
+.button {
+  -fx-background-color: #3F2B63;
+}
+
+/* Styling for a button when hovered */
+.button:hover {
+  -fx-background-color: #715EDD;
+}
+
+/* Styling for a pressed button */
+.button:pressed {
+  -fx-background-color: #715EDD;
+}
+
+/* Styling for the column headers in a table view */
+.table-view .column-header,
+.table-view .column-header-background .filler {
+  -fx-cell-size: 20;
+  -fx-background-color: #715EDD;
+}
+
+/* Styling for the label in the column headers */
+.table-view .column-header .label {
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-alignment: center-left;
+}
+
+/* Styling for the cells in the table view */
+.table-view .cell {
+  -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000; /* Change to the desired text color */
+  -fx-alignment: center-left;
+}

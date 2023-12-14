@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" stylesheets="@Values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deltaVelorum.coursify.messagerie.gui.SendMessageController">
+    <children>
+        <HBox layoutX="-3.0" layoutY="-1.0" prefHeight="600.0" prefWidth="258.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="dark-gray-background" stylesheets="@Values/style.css">
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="getAllButtond" layoutX="8.0" layoutY="126.0" mnemonicParsing="false" onAction="#getAll" prefHeight="30.0" prefWidth="60.0" stylesheets="@Values/style.css" text="All">
+                           <styleClass>
+                              <String fx:value="radius" />
+                              <String fx:value="dark-gray-background" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+                        <Button mnemonicParsing="false" onAction="#getById" prefHeight="45.0" prefWidth="59.0" stylesheets="@Values/style.css" text="GetMsg">
+                            <styleClass>
+                                <String fx:value="radius" />
+                                <String fx:value="purp-backgroud" />
+                            </styleClass>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <AnchorPane prefHeight="216.0" prefWidth="73.0" />
+                        <Button mnemonicParsing="false" onAction="#Return" prefHeight="45.0" prefWidth="55.0" stylesheets="@Values/style.css" text="Return">
+                            <styleClass>
+                                <String fx:value="radius" />
+                                <String fx:value="purp-backgroud" />
+                            </styleClass>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="600.0" prefWidth="213.0" styleClass="purp-backgroud" stylesheets="@Values/style.css">
+                    <children>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <VBox.margin>
+                                <Insets right="20.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <TextField fx:id="EmailEmetteur" promptText="Enter your E-mail here..." stylesheets="@Values/style.css">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="60.0" />
+                            </VBox.margin>
+                            <styleClass>
+                                <String fx:value="dark-gray-background" />
+                                <String fx:value="radius" />
+                            </styleClass>
+                        </TextField>
+                        <TextField fx:id="EmailDestinataire" promptText="Enter E-mail recipient here..." stylesheets="@Values/style.css" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                            </VBox.margin>
+                            <styleClass>
+                                <String fx:value="dark-gray-background" />
+                                <String fx:value="radius" />
+                            </styleClass>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+        <TextArea fx:id="ContenuMessage" layoutX="290.0" layoutY="62.0" prefHeight="489.0" prefWidth="438.0" promptText="Write here..." />
+        <TextField fx:id="ObjetMessage" layoutX="290.0" layoutY="24.0" prefHeight="25.0" prefWidth="438.0" promptText="Subject..." styleClass="radius" stylesheets="@Values/style.css" />
+        <Button layoutX="668.0" layoutY="556.0" mnemonicParsing="false" onAction="#Send" prefHeight="30.0" prefWidth="60.0" stylesheets="@Values/style.css" text="Send">
+            <styleClass>
+                <String fx:value="radius" />
+                <String fx:value="dark-gray-background" />
+            </styleClass>
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

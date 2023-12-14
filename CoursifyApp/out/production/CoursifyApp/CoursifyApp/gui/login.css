@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 18, 2023, 10:07:51 AM
+    Author     : ghanm
+*/
+#AnchorPane {
+    -fx-background-color: #f4f4f4; /* Set the background color */
+}
+
+.Label {
+    -fx-font-size: 14px; /* Set the font size */
+}
+
+
+
+.TextField {
+    -fx-background-color: #F2F2F2; /* Set the background color */
+    -fx-border-color: #cccccc; /* Set the border color */
+    -fx-border-width: 1px; /* Set the border width */
+    -fx-padding: 5px; /* Set the padding */
+
+    
+}
+
+.PasswordField {
+    -fx-background-color: #F2F2F2; /* Set the background color */
+    -fx-border-color: #cccccc; /* Set the border color */
+    -fx-border-width: 1px; /* Set the border width */
+    -fx-padding: 5px; /* Set the padding */
+  
+}
+
+.Button {
+    -fx-background-color: #9C6FE4; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 50px;
+
+}
+.okButton {
+    -fx-background-color: #31E097; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 50px;
+
+}
+.backButton {
+    -fx-background-color: #FBBC04; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 50px;
+
+}
+.deleteButton {
+    -fx-background-color: #EA4335; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 50px;
+
+}
+.coolButton {
+    -fx-background-color: #4285F4; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 50px;
+
+}
+
+.navbar {
+        -fx-background-color: #9C6FE4; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 250px;
+    
+}
+
+.item{
+     -fx-background-color: #9C6FE4; /* Set the background color */
+    -fx-text-fill: #FFFFFF; /* Set the text color */
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-padding: 5px 10px; /* Set the padding */
+   
+    -fx-border-radius: 250px;
+    
+}
+
+
+
+
+
+
+.Hyperlink {
+    -fx-font-size: 14px; /* Set the font size */
+    -fx-text-fill: #007bff; /* Set the text color */
+}
+
+#errorMessageLabel {
+    -fx-font-size: 14px; /* Set the font size */
+}

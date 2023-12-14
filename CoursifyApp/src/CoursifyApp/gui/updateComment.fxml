@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" styleClass="comment-Hbox" stylesheets="@Values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deltaVelorum.coursify.messagerie.gui.UpdateCommentController">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="600.0" prefWidth="129.0" styleClass="comment-Vbox" stylesheets="@Values/style.css" />
+      <Button layoutX="660.0" layoutY="535.0" mnemonicParsing="false" onAction="#update" prefHeight="45.0" prefWidth="65.0" styleClass="radius" stylesheets="@Values/style.css" text="Update" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ContenuCommentaire" layoutX="128.0" layoutY="25.0" prefHeight="493.0" prefWidth="597.0" promptText="Write you comment here..." />
+   </children>
+</AnchorPane>

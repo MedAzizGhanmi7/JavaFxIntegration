@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1014.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.AjoutController">
+   <children>
+      <Label layoutX="159.0" layoutY="315.0" text="Description">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="56.0" text="Prenom">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="224.0" text="Objet">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="57.0" prefHeight="21.0" prefWidth="59.0" text="Nom">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="590.0" layoutY="147.0" text="mail">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="147.0" text="télephone">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="TAdescription" layoutX="100.0" layoutY="369.0" prefHeight="251.0" prefWidth="267.0" promptText=" ecrire votre probléme ici" />
+      <TextField fx:id="TFnom" layoutX="197.0" layoutY="60.0" promptText="entrer votre nom">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <TextField fx:id="TFprenom" layoutX="670.0" layoutY="60.0" promptText="entrer votre prénom" />
+      <TextField fx:id="TFtelephone" layoutX="197.0" layoutY="151.0" promptText="entrer votre numero" />
+      <TextField fx:id="TFmail" layoutX="681.0" layoutY="151.0" promptText="entrer votre mail" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="nomErrorLabel" layoutX="159.0" layoutY="96.0" prefHeight="21.0" prefWidth="252.0" textFill="#d30d0d" />
+      <Label fx:id="prenomErrorLabel" layoutX="670.0" layoutY="106.0" prefHeight="21.0" prefWidth="323.0" textFill="#e11e1e" />
+      <Label fx:id="telephoneErrorLabel" layoutX="135.0" layoutY="193.0" prefHeight="21.0" prefWidth="314.0" textFill="#f80d0d" />
+      <Label fx:id="emailErrorLabel" layoutX="641.0" layoutY="193.0" prefHeight="21.0" prefWidth="267.0" textFill="#d30c0c" />
+      <Label fx:id="objetErrorLabel" layoutX="159.0" layoutY="271.0" prefHeight="21.0" prefWidth="244.0" textFill="#bf1010" />
+      <Label fx:id="descriptionErrorLabel" layoutX="87.0" layoutY="629.0" prefHeight="21.0" prefWidth="293.0" textFill="#da0d0d" />
+      <SplitMenuButton fx:id="SPobjet" layoutX="200.0" layoutY="228.0" mnemonicParsing="false" text="inscription">
+        <items>
+         <MenuItem onAction="#handleOption1" text="Option 1" />
+        <MenuItem onAction="#handleOption2" text="Option 2" />
+        <MenuItem onAction="#handleOption3" text="Option 3" />
+        </items>
+      </SplitMenuButton>
+      <ImageView fitHeight="298.0" fitWidth="450.0" layoutX="390.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bg-1623066197.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="821.0" layoutY="614.0" onAction="#ajoutrec" prefHeight="72.0" prefWidth="161.0" ripplerFill="#008d3f" style="-fx-background-color: pink;" text="envoyer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="821.0" layoutY="495.0" onAction="#ferr" prefHeight="72.0" prefWidth="161.0" ripplerFill="#e10b0b" style="-fx-background-color: pink;" text="fermer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect></JFXButton>
+   </children>
+</AnchorPane>

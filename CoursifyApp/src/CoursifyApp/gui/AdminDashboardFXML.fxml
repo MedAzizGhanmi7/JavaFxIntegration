@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="880.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.AdminDashboardFXMLController">
+    <children>
+        <ImageView fitHeight="1050.0" fitWidth="1501.0" layoutX="-67.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/background.png" />
+            </image>
+        </ImageView>
+        <MenuBar fx:id="adminNavBar" layoutY="14.0" prefHeight="32.0" prefWidth="1019.0" styleClass="navbar">
+            <menus>
+                <Menu fx:id="profile" mnemonicParsing="false" styleClass="item" text="Profile">
+                    <items>
+                        <MenuItem fx:id="gotoprofile" mnemonicParsing="false" onAction="#goToadminProfile" text="Go to Profile" />
+
+                    </items>
+                </Menu>
+                <Menu fx:id="UserManagement" mnemonicParsing="false" styleClass="item" text="User Management">
+                    <items>
+                        <MenuItem fx:id="manageAdminsClick" mnemonicParsing="false" onAction="#manageAdminsClick" text="Manage Admins" />
+                        <MenuItem fx:id="manageStudentsClick" mnemonicParsing="false" onAction="#manageStudentsClick" text="Manage Students" />
+                        <MenuItem fx:id="manageInstructorsClick" mnemonicParsing="false" onAction="#manageInstructorsClick" text="Manage Instructors" />
+                    </items>
+                </Menu>
+                <Menu fx:id="claimsManagement" mnemonicParsing="false" onAction="#goToNotifications" styleClass="item" text="Claims Management">
+                    <items>
+                        <MenuItem fx:id="manageclaims" mnemonicParsing="false" onAction="#goToaClaims" text="Manage Claims" />
+
+                    </items>
+                </Menu>
+                <Menu fx:id="notifications" mnemonicParsing="false" styleClass="item" text="donation">
+                    <items>
+                        <MenuItem fx:id="gotonotifications" mnemonicParsing="false" onAction="#goToNotifications" text="see all notifications" />
+
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <!-- Add these lines inside the <children> section of your AnchorPane -->
+        <HBox fx:id="hbox" layoutX="14.0" layoutY="52.0">
+            <TextField fx:id="searchField" onAction="#searchButtonClicked" promptText="Search by Email" styleClass="TextField" />
+            <Button onAction="#searchButtonClicked" styleClass="okButton" text="Search" />
+        </HBox>
+
+
+        <ListView fx:id="listView" layoutX="14.0" layoutY="83.0" prefHeight="764.0" prefWidth="1266.0" />
+        <Button fx:id="addAdminbtn" layoutX="1187.0" layoutY="833.0" mnemonicParsing="false" onAction="#addAdmin" prefHeight="31.0" prefWidth="118.0" styleClass="okButton" text="Add admin" visible="false" />
+        <Button fx:id="deleteUserbtn" layoutX="1037.0" layoutY="833.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="31.0" prefWidth="132.0" styleClass="deleteButton" text="Delete user" visible="false" />
+        <Button fx:id="signOutButton" layoutX="1111.0" layoutY="15.0" mnemonicParsing="false" onAction="#signOut" styleClass="coolButton" text="Sign Out" />
+        <Button fx:id="toggleAccountbtn" layoutX="886.0" layoutY="833.0" mnemonicParsing="false" onAction="#toggleSelectedUser" prefHeight="31.0" prefWidth="145.0" styleClass="backButton" text="Toggle Account" visible="false" />
+    </children>
+</AnchorPane>

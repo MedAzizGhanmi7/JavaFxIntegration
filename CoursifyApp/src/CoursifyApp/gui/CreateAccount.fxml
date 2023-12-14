@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchorpane" prefHeight="757.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.CreateAccountController">
+   <children>
+      <ImageView fitHeight="819.0" fitWidth="1146.0" layoutX="-3.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CreateAcc.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="firstName" layoutX="137.0" layoutY="245.0" styleClass="TextField" />
+      <Label layoutX="29.0" layoutY="250.0" text="First Name" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="304.0" text="Last Name" textFill="WHITE" />
+      <TextField fx:id="lasttName" layoutX="137.0" layoutY="299.0" styleClass="TextField" />
+      <TextField fx:id="username" layoutX="137.0" layoutY="354.0" styleClass="TextField" />
+      <Label layoutX="29.0" layoutY="359.0" prefHeight="21.0" prefWidth="72.0" text="Username" textFill="WHITE" />
+      <TextField fx:id="email" layoutX="137.0" layoutY="415.0" styleClass="TextField" />
+      <Label layoutX="41.0" layoutY="420.0" prefHeight="21.0" prefWidth="72.0" text="email" textFill="WHITE" />
+      <TextField fx:id="password" layoutX="501.0" layoutY="245.0" styleClass="TextField" />
+      <Label layoutX="418.0" layoutY="250.0" text="Password" textFill="WHITE" />
+      <TextField fx:id="address" layoutX="501.0" layoutY="299.0" styleClass="TextField" />
+      <Label layoutX="423.0" layoutY="304.0" text="Address" textFill="WHITE" />
+      <Label layoutX="426.0" layoutY="359.0" text="Phone " textFill="WHITE" />
+      <TextField fx:id="phoneNumber" layoutX="618.0" layoutY="354.0" prefHeight="31.0" prefWidth="144.0" styleClass="TextField" />
+      <DatePicker fx:id="dateOfBirth" layoutX="137.0" layoutY="483.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="41.0" layoutY="488.0" text="Birthday" textFill="WHITE" />
+      <RadioButton fx:id="genderFemale" layoutX="629.0" layoutY="493.0" mnemonicParsing="false" text="Female" textFill="WHITE" />
+      <RadioButton fx:id="genderMale" layoutX="528.0" layoutY="493.0" mnemonicParsing="false" text="Male" textFill="WHITE" />
+      <Label layoutX="430.0" layoutY="493.0" text="Gender" textFill="WHITE" />
+      <Label layoutX="397.0" layoutY="420.0" prefHeight="21.0" prefWidth="104.0" text="Profile picture" textFill="WHITE" />
+      <Button fx:id="CreateAccBtn" layoutX="248.0" layoutY="652.0" mnemonicParsing="false" onAction="#CreateAcc" prefHeight="31.0" prefWidth="201.0" styleClass="okButton" text="Create Account" />
+      <ComboBox fx:id="loginAsOptions" layoutX="717.0" layoutY="66.0" prefWidth="150.0" promptText="join as" styleClass="backButton" />
+      <TextField fx:id="majorField" layoutX="137.0" layoutY="583.0" styleClass="TextField" visible="false" />
+      <TextField fx:id="gradeField" layoutX="503.0" layoutY="583.0" styleClass="TextField" visible="false" />
+      <Label fx:id="majorLabel" layoutX="45.0" layoutY="588.0" prefHeight="21.0" prefWidth="47.0" text="Major" textFill="WHITE" visible="false" />
+      <Label fx:id="gradeLabel" layoutX="397.0" layoutY="588.0" prefHeight="21.0" prefWidth="104.0" text="Current Grade" textFill="WHITE" visible="false" />
+      <TextField fx:id="experienceField" layoutX="137.0" layoutY="562.0" styleClass="TextField" visible="false" />
+      <Label fx:id="experienceLabel" layoutX="28.0" layoutY="567.0" prefHeight="21.0" prefWidth="75.0" text="experience" textFill="WHITE" visible="false" />
+      <Label fx:id="experienceLabel2" layoutX="10.0" layoutY="588.0" prefHeight="21.0" prefWidth="117.0" text="(number of years)" textFill="WHITE" visible="false" />
+      <TextArea fx:id="bioTextArea" layoutX="501.0" layoutY="536.0" prefHeight="103.0" prefWidth="498.0" styleClass="TextField" visible="false" />
+      <Label fx:id="bioLabel" layoutX="432.0" layoutY="544.0" prefHeight="21.0" prefWidth="47.0" text="Bio " textFill="WHITE" visible="false" />
+      <Label fx:id="bioLabel1" layoutX="412.0" layoutY="577.0" prefHeight="21.0" prefWidth="86.0" text="(description)" textFill="WHITE" visible="false" />
+      <Label fx:id="typeErrorLabel" layoutX="725.0" layoutY="126.0" prefHeight="21.0" prefWidth="263.0" textFill="RED" visible="false" />
+      <Label fx:id="generalErrorLabel" layoutX="481.0" layoutY="657.0" prefHeight="21.0" prefWidth="583.0" text="Label" textFill="RED" visible="false" />
+      <ComboBox fx:id="countryComboBox" layoutX="500.0" layoutY="354.0" prefHeight="31.0" prefWidth="117.0" />
+      <Button fx:id="selectimgButton" layoutX="526.0" layoutY="415.0" mnemonicParsing="false" onAction="#selectImage" styleClass="backButton" text="Select an image" />
+      <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="200.0" layoutX="836.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="goBckbtn" layoutX="57.0" layoutY="652.0" mnemonicParsing="false" onAction="#goBacktoLogin" prefHeight="31.0" prefWidth="117.0" styleClass="backButton" text="Go back" />
+   </children>
+</AnchorPane>
