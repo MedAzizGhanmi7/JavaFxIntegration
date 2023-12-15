@@ -23,12 +23,12 @@
       <Button layoutX="393.0" layoutY="277.0" mnemonicParsing="false" onAction="#onEditButtonClick" prefHeight="26.0" prefWidth="91.0" text="Edit Selected" AnchorPane.bottomAnchor="21.6" AnchorPane.rightAnchor="410.8" />
       <ImageView fitHeight="375.0" fitWidth="327.0" layoutX="569.0" layoutY="-0.8" pickOnBounds="true" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
          <image>
-            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/studyDesk.jpg" />
+            <Image url="@../../img/studyDesk.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="40.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="21.0">
          <image>
-            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/document.png" />
+            <Image url="@../../img/document.png" />
          </image>
       </ImageView>
       <Button layoutX="414.0" layoutY="328.0" mnemonicParsing="false" onAction="#onPreviewButtonClick" prefHeight="26.0" prefWidth="137.0" text="preview" AnchorPane.bottomAnchor="20.6" AnchorPane.rightAnchor="512.4" />

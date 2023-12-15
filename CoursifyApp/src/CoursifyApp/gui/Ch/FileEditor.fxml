@@ -21,12 +21,12 @@
       </Label>
       <ImageView fitHeight="118.0" fitWidth="88.0" layoutX="314.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/pdf.png" />
+            <Image url="@../../img/pdf.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="50.0" fitWidth="30.0" layoutX="365.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/video.png" />
+            <Image url="@../../img/video.png" />
          </image>
       </ImageView>
       <Separator layoutX="23.0" layoutY="109.0" prefHeight="0.0" prefWidth="367.0" visible="false" />
