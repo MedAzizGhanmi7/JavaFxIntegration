@@ -1,0 +1,29 @@
+.table-view {
+    -fx-background-color: #f4f4f4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: #fff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b8d8f9;
+}
+
+#messageTable {
+    -fx-pref-width: 600;
+    -fx-pref-height: 400;
+}
+
+#idColumn, #contentColumn, #senderColumn, #recipientColumn, #subjectColumn, #dateColumn {
+    -fx-alignment: CENTER;
+}

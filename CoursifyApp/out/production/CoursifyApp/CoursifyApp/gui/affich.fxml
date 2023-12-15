@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="915.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.AffichController">
+   <children>
+      <JFXListView fx:id="reclamationListView" layoutX="53.0" layoutY="22.0" prefHeight="598.0" prefWidth="385.0" />
+      <JFXButton fx:id="deleteButton" buttonType="RAISED" layoutX="500.0" layoutY="206.0" prefHeight="79.0" prefWidth="196.0" ripplerFill="#b51515" style="-fx-background-color: pink;" text="supprimer" />
+      <JFXButton buttonType="RAISED" layoutX="500.0" layoutY="334.0" onAction="#ff" prefHeight="79.0" prefWidth="196.0" ripplerFill="#ee0e0e" style="-fx-background-color: pink;" text="fermer" />
+      <JFXButton buttonType="RAISED" layoutX="500.0" layoutY="80.0" onAction="#rep" prefHeight="79.0" prefWidth="196.0" ripplerFill="#00b525" style="-fx-background-color: pink;" text="repondre" />
+      <ImageView fitHeight="177.0" fitWidth="329.0" layoutX="543.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/claim-listing900x600.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="765.0" layoutY="22.0" onAction="#excell" prefHeight="58.0" prefWidth="127.0" ripplerFill="BLACK" style="-fx-background-color: #6495ED;" text="Excel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

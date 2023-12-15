@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deltaVelorum.coursify.messagerie.gui.CommentController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="100.0" styleClass="comment-Vbox" stylesheets="@Values/style.css">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#getAll" prefHeight="45.0" prefWidth="60.0" stylesheets="@Values/style.css" text="All">
+               <styleClass>
+                  <String fx:value="radius" />
+                  <String fx:value="comment-Hbox" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#getByid" prefHeight="45.0" prefWidth="62.0" stylesheets="@Values/style.css" text="GetById">
+               <styleClass>
+                  <String fx:value="radius" />
+                  <String fx:value="comment-Hbox" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#Exit" prefHeight="45.0" prefWidth="60.0" stylesheets="@Values/style.css" text="Exit">
+               <styleClass>
+                  <String fx:value="radius" />
+                  <String fx:value="comment-Hbox" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="100.0" layoutY="-1.0" prefHeight="602.0" prefWidth="200.0" styleClass="comment-Hbox" stylesheets="@Values/style.css">
+         <children>
+            <TextField fx:id="EmailCommentateur" promptText="Enter your e-mail..." styleClass="radius" stylesheets="@Values/style.css">
+               <HBox.margin>
+                  <Insets top="80.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <TextArea fx:id="ContenuCommentaire" layoutX="320.0" layoutY="27.0" prefHeight="505.0" prefWidth="415.0" promptText="Write your comment here..." />
+      <Button layoutX="661.0" layoutY="552.0" mnemonicParsing="false" onAction="#Comment" prefHeight="35.0" prefWidth="75.0" stylesheets="@Values/style.css" text="Comment" textFill="#cdc8c8" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="radius" />
+            <String fx:value="transparent-background" />
+            <String fx:value="comment-Vbox" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoursifyApp.gui.Ch.FileEditorController">
+   <children>
+      <Button layoutX="217.0" layoutY="19.0" mnemonicParsing="false" onAction="#onOpenFileClick" prefHeight="42.0" prefWidth="78.0" text="Open file" />
+      <Label layoutX="22.0" layoutY="14.0" text="Upload a file">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectedFileLabel" layoutX="22.0" layoutY="62.0" text="No File Selected." />
+      <Label fx:id="selectedFileSizeLabel" layoutX="22.0" layoutY="80.0" text="0 MB">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="88.0" layoutX="314.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/pdf.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="30.0" layoutX="365.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../CoursifyApp/src/main/java/com/deltaVelorum/coursify/chapitre/gui/img/video.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="23.0" layoutY="109.0" prefHeight="0.0" prefWidth="367.0" visible="false" />
+      <TextField fx:id="urlTextField" layoutX="108.0" layoutY="119.0" prefHeight="22.0" prefWidth="277.0" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="121.0" text="Or From URL" visible="false" />
+   </children>
+</AnchorPane>

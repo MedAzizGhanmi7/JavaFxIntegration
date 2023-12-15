@@ -34,7 +34,7 @@
 
             </items>
           </Menu>
-          <Menu fx:id="notifications" mnemonicParsing="false" styleClass="item" text="notifications">
+          <Menu fx:id="notifications" mnemonicParsing="false" styleClass="item" text="make donation">
             <items>
             <MenuItem fx:id="gotonotifications" mnemonicParsing="false" onAction="#goToNotifications" text="see all notifications" />
 

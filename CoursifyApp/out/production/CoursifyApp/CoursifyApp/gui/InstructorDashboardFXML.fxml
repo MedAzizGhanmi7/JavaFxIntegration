@@ -34,12 +34,17 @@
 
             </items>
           </Menu>
-          <Menu fx:id="notifications" mnemonicParsing="false" styleClass="item" text="notifications">
+          <Menu fx:id="notifications" mnemonicParsing="false" styleClass="item" text="make donation">
             <items>
             <MenuItem fx:id="gotonotifications" mnemonicParsing="false" onAction="#goToNotifications" text="see all notifications" />
 
             </items>
           </Menu>
+            <Menu fx:id="message" mnemonicParsing="false" styleClass="item" text="send a message">
+               <items>
+                  <MenuItem fx:id="sendMessage" mnemonicParsing="false" onAction="#goToNoMessage" text="message" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
          

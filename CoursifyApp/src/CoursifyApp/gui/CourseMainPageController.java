@@ -2,6 +2,7 @@ package CoursifyApp.gui;
 
 import CoursifyApp.entities.Course;
 import CoursifyApp.entities.Instructor;
+import CoursifyApp.gui.Ch.ChapterEditorController;
 import CoursifyApp.services.CourseService;
 import CoursifyApp.services.InstructorService;
 import java.io.IOException;
@@ -273,6 +274,36 @@ private void showCourseDetailsDialog(Course course) {
         // Set the items for the ListView
         courseListView.setItems(courseList);
     }
+   
+   @FXML
+   private void editcourse(ActionEvent event)
+   {
+       Course selectedCourse = courseListView.getSelectionModel().getSelectedItem();
+       if(selectedCourse == null)
+           return;
+       try {
+           // Load the "add page" FXML file
+           FXMLLoader loader = new FXMLLoader(ClassLoader.getSystemResource("CoursifyApp/gui/Ch/ChapterEditor.fxml"));
+           Parent root = loader.load();
+           ChapterEditorController controller = (ChapterEditorController)loader.getController();
+           controller.initialize(selectedCourse);
+
+           // Create a new stage
+           Stage addStage = new Stage();
+           addStage.setScene(new Scene(root));
+
+           // Set the title of the "add page" window
+           addStage.setTitle("Top rated courses");
+
+           // Close the current stage (CourseMainPage)
+           // stage.close();
+
+           // Show the "add page" window
+           addStage.show();
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
+   }
    
     @FXML
     private void deletecourse(ActionEvent event) {
